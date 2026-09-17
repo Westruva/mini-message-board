@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Board</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <p class="eyebrow">A place to share</p>
+      <h1>Message Board</h1>
+      <p class="intro">Small thoughts, shared openly.</p>
+      <a href="/new" class="button-link">Write a new message</a>
+    </header>
+
+    <section class="message-section" aria-labelledby="messages-heading">
+      <div class="section-heading">
+        <h2 id="messages-heading">Recent messages</h2>
+        <span class="message-count"><%= messages.length %> posted</span>
+      </div>
+      <ul class="message-list">
+        <% messages.forEach(message => { %>
+          <li class="message-card">
+            <div class="message-meta">
+              <strong><%= message.user %></strong>
+              <time><%= message.added.toLocaleString() %></time>
+            </div>
+            <p><%= message.text %></p>
+          </li>
+        <% }) %>
+      </ul>
+    </section>
+
+    <footer>
+      <p><%= footer %></p>
+    </footer>
+  </main>
+</body>
+</html>

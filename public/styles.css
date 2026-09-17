@@ -1,0 +1,276 @@
+:root {
+	color: #16324f;
+	background: #eaf7ff;
+	font-family: Georgia, "Times New Roman", serif;
+	font-synthesis: none;
+	line-height: 1.5;
+	--sky-900: #164e70;
+	--sky-700: #1479ad;
+	--sky-500: #39a9dc;
+	--sky-200: #b9e5f8;
+	--sky-100: #eaf7ff;
+	--ink: #16324f;
+	--muted: #5d7890;
+	--white: #ffffff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	margin: 0;
+	background: linear-gradient(
+		145deg,
+		#d8f1fd 0%,
+		var(--sky-100) 48%,
+		#ffffff 100%
+	);
+}
+
+.page-shell {
+	width: min(100% - 2rem, 780px);
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 4rem 0 2rem;
+}
+
+.page-header {
+	position: relative;
+	overflow: hidden;
+	padding: clamp(2rem, 6vw, 4.5rem);
+	border-radius: 1.5rem;
+	color: var(--white);
+	background: linear-gradient(135deg, var(--sky-900), var(--sky-700));
+	box-shadow: 0 1.5rem 3rem rgba(22, 78, 112, 0.2);
+}
+
+.page-header::after {
+	position: absolute;
+	right: -4rem;
+	bottom: -5rem;
+	width: 15rem;
+	height: 15rem;
+	border: 2rem solid rgba(255, 255, 255, 0.09);
+	border-radius: 50%;
+	content: "";
+}
+
+.eyebrow {
+	position: relative;
+	z-index: 1;
+	margin: 0 0 0.75rem;
+	color: var(--sky-200);
+	font-size: 0.78rem;
+	font-weight: bold;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+	margin-top: 0;
+}
+
+h1 {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 0.5rem;
+	font-size: clamp(2.5rem, 8vw, 4.75rem);
+	line-height: 1;
+}
+
+.intro {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 2rem;
+	color: #d9f3ff;
+	font-size: 1.1rem;
+}
+
+.form-page {
+	display: grid;
+	place-items: center;
+}
+
+.form-panel {
+	width: min(100%, 600px);
+	padding: clamp(2rem, 6vw, 4rem);
+	border: 1px solid var(--sky-200);
+	border-radius: 1.5rem;
+	background: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 1.5rem 3rem rgba(22, 78, 112, 0.12);
+}
+
+.form-panel h1 {
+	margin-bottom: 0.5rem;
+	color: var(--sky-900);
+}
+
+.form-intro {
+	margin-bottom: 2rem;
+	color: var(--muted);
+}
+
+form {
+	display: grid;
+	gap: 1.25rem;
+}
+
+.form-field {
+	display: grid;
+	gap: 0.45rem;
+}
+
+label {
+	color: var(--sky-900);
+	font-weight: bold;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 0.85rem 1rem;
+	border: 2px solid var(--sky-200);
+	border-radius: 0.6rem;
+	color: var(--ink);
+	background: #f8fdff;
+	font: inherit;
+	resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+	border-color: var(--sky-500);
+	outline: 3px solid rgba(57, 169, 220, 0.25);
+}
+
+button {
+	padding: 0.85rem 1.2rem;
+	border: 2px solid var(--sky-700);
+	border-radius: 999px;
+	color: var(--white);
+	background: var(--sky-700);
+	font: inherit;
+	font-weight: bold;
+	cursor: pointer;
+	transition:
+		background 160ms ease,
+		transform 160ms ease;
+}
+
+button:hover,
+button:focus-visible {
+	background: var(--sky-900);
+	transform: translateY(-2px);
+}
+
+.button-link {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	padding: 0.8rem 1.15rem;
+	border: 2px solid var(--white);
+	border-radius: 999px;
+	color: var(--sky-900);
+	background: var(--white);
+	font-family: inherit;
+	font-weight: bold;
+	text-decoration: none;
+	transition:
+		transform 160ms ease,
+		background 160ms ease,
+		color 160ms ease;
+}
+
+.button-link:hover,
+.button-link:focus-visible {
+	color: var(--white);
+	background: transparent;
+	transform: translateY(-2px);
+}
+
+.message-section {
+	padding: 3rem 0 1rem;
+}
+
+.section-heading,
+.message-meta {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+h2 {
+	margin-bottom: 1rem;
+	color: var(--sky-900);
+	font-size: 1.6rem;
+}
+
+.message-count,
+time {
+	color: var(--muted);
+	font-size: 0.85rem;
+}
+
+.message-list {
+	display: grid;
+	gap: 1rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.message-card {
+	padding: 1.25rem 1.5rem;
+	border-left: 4px solid var(--sky-500);
+	border-radius: 0 0.8rem 0.8rem 0;
+	background: rgba(255, 255, 255, 0.86);
+	box-shadow: 0 0.5rem 1.25rem rgba(35, 117, 158, 0.09);
+}
+
+.message-card strong {
+	color: var(--sky-700);
+	font-size: 1.1rem;
+}
+
+.message-card p {
+	margin: 0.5rem 0 0;
+	color: var(--ink);
+	font-size: 1.05rem;
+	overflow-wrap: anywhere;
+}
+
+footer {
+	padding-top: 2rem;
+	border-top: 1px solid var(--sky-200);
+	color: var(--muted);
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+footer p {
+	margin-bottom: 0;
+}
+
+@media (max-width: 520px) {
+	.page-shell {
+		width: min(100% - 1.25rem, 780px);
+		padding-top: 1.25rem;
+	}
+
+	.page-header {
+		border-radius: 1rem;
+	}
+
+	.section-heading,
+	.message-meta {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 0.2rem;
+	}
+}
