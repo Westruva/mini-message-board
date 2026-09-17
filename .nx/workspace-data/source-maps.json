@@ -1,0 +1,68 @@
+{
+  "apps/message-board-next": {
+    "root": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "name": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.root": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.dev": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.dev.executor": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.dev.options": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.dev.options.buildTarget": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.dev.options.dev": [
+      "apps/message-board-next/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  }
+}

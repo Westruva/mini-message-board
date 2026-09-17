@@ -1,0 +1,20 @@
+{
+	"name": "message-board-next",
+	"sourceRoot": "apps/message-board-next",
+	"projectType": "application",
+	"targets": {
+		"build": {
+			"executor": "@nx/next:build",
+			"options": {
+				"root": "apps/message-board-next"
+			}
+		},
+		"dev": {
+			"executor": "@nx/next:server",
+			"options": {
+				"buildTarget": "message-board-next:build",
+				"dev": true
+			}
+		}
+	}
+}

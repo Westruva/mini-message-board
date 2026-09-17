@@ -27,7 +27,7 @@ A simple message board built with Node.js, Express, and EJS. Visitors can view r
 2. Start the server:
 
    ```bash
-   node app.js
+   npm start
    ```
 
 3. Open the application in your browser at [http://localhost:3000](http://localhost:3000).
@@ -43,9 +43,14 @@ A simple message board built with Node.js, Express, and EJS. Visitors can view r
 ## Project Structure
 
 - `app.js` - Configures Express, stores messages, and starts the server
+- `index.js` - Root entry point used by `npm start`
+- `src/server.js` - Express server entry referenced by the package `main` field
 - `routes/new.js` - Handles displaying and submitting the new-message form
 - `views/` - Contains the EJS templates
 - `public/styles.css` - Contains the application styling
+
+The repository is also an Nx workspace. The Next.js app lives in
+`apps/message-board-next` and can be started with `npm run next:dev`.
 
 ## Data Storage
 

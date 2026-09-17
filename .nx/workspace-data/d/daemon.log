@@ -1,0 +1,12 @@
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.240Z - Started listening on: /tmp/6d21edb7984f73e5f1f8/d.sock
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.241Z - [WATCHER]: Subscribed to changes within: /home/wayne/repos/mini-message-board (native)
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.243Z - Established a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.244Z - Established a connection. Number of open connections: 2
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.246Z - Closed a connection. Number of open connections: 1
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.247Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.247Z - Done responding to the client Shutdown initiated
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.247Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.247Z - Closed a connection. Number of open connections: 0
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.248Z - [WATCHER]: Stopping the watcher for /home/wayne/repos/mini-message-board (sources)
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.248Z - [WATCHER]: Stopping the watcher for /home/wayne/repos/mini-message-board (outputs)
+[NX v20.8.4 Daemon Server] - 2026-09-17T15:35:14.248Z - Server stopped because: "Request to shutdown"

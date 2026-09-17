@@ -1,9 +1,11 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const newMessageRouter = require("./routes/new");
+const newMessageRouter = require("../routes/new");
 
-const assetsPath = path.join(__dirname, "public");
+const projectRoot = path.join(__dirname, "..");
+const assetsPath = path.join(projectRoot, "public");
+const viewsPath = path.join(projectRoot, "views");
 
 const messages = [
 	{ text: "Hie everyone!", user: "Wayne", added: new Date() },
@@ -11,6 +13,7 @@ const messages = [
 ];
 
 app.set("view engine", "ejs");
+app.set("views", viewsPath);
 app.use(express.urlencoded({ extended: false }));
 app.use("/", newMessageRouter(messages));
 app.use(express.static(assetsPath));

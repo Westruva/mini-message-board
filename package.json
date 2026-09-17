@@ -1,6 +1,22 @@
 {
-  "dependencies": {
-    "ejs": "^6.0.1",
-    "express": "^5.2.1"
-  }
+	"name": "mini-message-board",
+	"version": "1.0.0",
+	"private": true,
+	"main": "src/server.js",
+	"scripts": {
+		"start": "node index.js",
+		"next:dev": "nx dev message-board-next",
+		"next:build": "nx build message-board-next"
+	},
+	"dependencies": {
+		"ejs": "^6.0.1",
+		"express": "^5.2.1",
+		"next": "^14.2.0",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@nx/next": "^20.0.0",
+		"nx": "^20.0.0"
+	}
 }

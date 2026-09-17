@@ -1,0 +1,78 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.4",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "message-board-next": [
+        {
+          "file": "apps/message-board-next/pages/_app.js",
+          "hash": "721316168083011212"
+        },
+        {
+          "file": "apps/message-board-next/pages/index.js",
+          "hash": "901720890213755863"
+        },
+        {
+          "file": "apps/message-board-next/project.json",
+          "hash": "14875550129463773741"
+        },
+        {
+          "file": "apps/message-board-next/styles/globals.css",
+          "hash": "17122013311448485117"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "15705160864064489400"
+      },
+      {
+        "file": "README.md",
+        "hash": "5504071415388119727"
+      },
+      {
+        "file": "index.js",
+        "hash": "15059880496446509275"
+      },
+      {
+        "file": "nx.json",
+        "hash": "10477365490027655605"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "13068397972729417185"
+      },
+      {
+        "file": "package.json",
+        "hash": "13156169592997208419"
+      },
+      {
+        "file": "public/styles.css",
+        "hash": "10327774943037777658"
+      },
+      {
+        "file": "routes/index.ejs",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "routes/new.js",
+        "hash": "16866942519201523161"
+      },
+      {
+        "file": "src/server.js",
+        "hash": "4105458659335556189"
+      },
+      {
+        "file": "views/formTemplate.ejs",
+        "hash": "11887306409666471032"
+      },
+      {
+        "file": "views/index.ejs",
+        "hash": "15562098034381437859"
+      }
+    ]
+  }
+}
